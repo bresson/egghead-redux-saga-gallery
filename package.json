@@ -5,7 +5,7 @@
   "main": "src/main.js.js",
   "scripts": {
     "test": "babel-node ./src/sagas/sagas.spec.js | tap-spec",
-    "start": "budo ./src/main.js:build.js --dir ./src --verbose  --live -- -t babelify"
+    "start": "budo ./src/main.js:build.js --dir ./src --verbose  -a 0.0.0.0 -p 3000 --live -- -t babelify"
   },
   "repository": {
     "type": "git",
